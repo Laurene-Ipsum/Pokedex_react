@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState, useEffect } from 'react';
 import Pokemon from '../models/pokemon';
 import POKEMONS from '../models/mock-pokemon';
 import PokemonCard from '../components/pokemon-card';
+import { ReactComponent as Logo } from '../models/logo.svg';
 
   
 const PokemonList: FunctionComponent = () => {
@@ -13,7 +14,9 @@ const PokemonList: FunctionComponent = () => {
   
   return (
     <div>
-      <h1 className="center"> aa</h1>
+      <h1 className="center">
+      <Logo width='50%' height='105px' />
+      </h1>
       <div className="container"> 
         <div className="row"> 
         {pokemons.map(pokemon => (
