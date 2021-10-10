@@ -11,7 +11,7 @@ type Props = {
   borderColor?: string
 };
   
-const PokemonCard: FunctionComponent<Props> = ({pokemon, borderColor = '#009688'}) => {
+const PokemonCard: FunctionComponent<Props> = ({pokemon, borderColor = '#F44336'}) => {
     
     const [color, setColor] = useState<string>();
     const history = useHistory();

@@ -26,8 +26,8 @@ const PokemonsDetail: FunctionComponent<RouteComponentProps<Params>> = ({ match 
           <div className="col s12 m8 offset-m2"> 
             <h2 className="header center">{ pokemon.name }</h2>
             <div className="card hoverable"> 
-              <div className="card-image">
-                <img src={pokemon.picture} alt={pokemon.name} style={{width: '250px', margin: '0 auto'}}/>
+              <div className="card-image">  <img src={pokemon.picture} alt={pokemon.name} style={{width: '250px', margin: '0 auto'}}/>
+              
                   <Link to={`/pokemons/edit/${pokemon.id}`} className="btn btn-floating halfway-fab waves-effect waves-light">
                     <i className="material-icons">edit</i>
                   </Link>

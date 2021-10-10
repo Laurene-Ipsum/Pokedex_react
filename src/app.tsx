@@ -1,18 +1,18 @@
 import React, { FunctionComponent } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import PokemonList from './pages/pokemon-list';
 import PokemonDetail from './pages/pokemon-detail';
 
 import PageNotFound from './pages/page-not-found';
 import PokemonEdit from './pages/pokemon-edit';
 import NavBar from './components/navBar';
+
   
 const App: FunctionComponent = () => {
 
  return (
      <Router>
-         <div>
-             
+         <div >     
          <NavBar />
              <Switch>
                  <Route exact path="/" component={PokemonList} />
